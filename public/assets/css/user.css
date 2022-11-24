@@ -1,0 +1,153 @@
+/* prettier-ignore */
+/*-----------------------------------------------
+|   Navigation 
+------------------------------------------------*/
+/*-----------------------------------------------
+|   Navbar Brand 
+------------------------------------------------*/
+/*# sourceMappingURL=user.css.map */
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+
+* {
+  font-family: 'Pretendard' !important;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.onlyPC br {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .onlyPC br {
+    display: none;
+  }
+}
+
+.logo {
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+.custom .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.custom .swiper-container.swiper--bottom:after {
+  animation-direction: reverse;
+}
+
+.custom .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.custom .swiper-slide {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 33px;
+  background: #fff;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.custom .swiper-slide img {
+  display: block;
+  width: 200px;
+}
+
+@keyframes line-slide {
+  0% {
+    background-position: -5% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
+	height: 24em;
+}
+
+@media screen and (max-width: 768px) {
+  .text-ellipsis {
+    -webkit-line-clamp: 10;
+    height: 12em;
+  }
+}
+
+.text-ellipsis.unlocked {
+  overflow: visible;
+  height: auto;
+  display: block;
+}
+
+.text-ellipsis.unlocked~div svg {
+  transform: scaleY(-1);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+.escape-left {
+  margin-right: 100px;
+}
+
+/* theme custom */
+:root, :root.light, :root .light {
+  --sparrow-primary: #1735DB;
+  --sparrow-primary-rgb: 23, 53, 219;
+}
+
+.btn-primary {
+  --sparrow-btn-color: #fff;
+  --sparrow-btn-bg: #1735db;
+  --sparrow-btn-border-color: #1735db;
+  --sparrow-btn-hover-color: #fff;
+  --sparrow-btn-hover-bg: #1735db;
+  --sparrow-btn-hover-border-color: #1735db;
+  --sparrow-btn-focus-shadow-rgb: 42, 116, 202;
+  --sparrow-btn-active-color: #fff;
+  --sparrow-btn-active-bg: #1735db;
+  --sparrow-btn-active-border-color: #1735db;
+  --sparrow-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --sparrow-btn-disabled-color: #fff;
+  --sparrow-btn-disabled-bg: #1735db;
+  --sparrow-btn-disabled-border-color: #1735db;
+}
