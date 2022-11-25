@@ -11,12 +11,15 @@ let SwiperTop = new Swiper('.swiper--top', {
   disableOnInteraction: true
 });
 
-let ellipsisEls = document.querySelectorAll('.text-ellipsis')
-console.log(ellipsisEls)
+const unlockEl1 = document.getElementById('unlock-el1')
+const unlockEl2 = document.getElementById('unlock-el2')
 
-function unlock() {
-  ellipsisEls.forEach((el) => {
-    el.classList.toggle('unlocked')
-  });
+function unlock(el) {
+  if (el == 1) {
+    unlockEl1.classList.toggle('unlocked')
+  }
+  if (el == 2) {
+    unlockEl2.classList.toggle('unlocked')
+  }
 }
 

@@ -25,12 +25,20 @@
   object-fit: cover;
 }
 
+.pc-img, .pc-str {
+  display: block;
+}
+
 .onlyPC br {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
   .onlyPC br {
+    display: none;
+  }
+
+  .pc-img, .pc-str {
     display: none;
   }
 }
@@ -90,17 +98,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 20;
+  -webkit-line-clamp: 24;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   line-height: 1.2em;
-	height: 24em;
+	height: 28.8em;
 }
 
 @media screen and (max-width: 768px) {
   .text-ellipsis {
-    -webkit-line-clamp: 10;
-    height: 12em;
+    -webkit-line-clamp: 12;
+    height: 14.4em;
   }
 }
 
@@ -125,8 +133,9 @@
   }
 }
 
-.escape-left {
-  margin-right: 100px;
+.swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+  background-color: rgba(36, 36, 36, 0.6) !important;
 }
 
 /* theme custom */

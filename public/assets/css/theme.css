@@ -19597,7 +19597,7 @@ html[dir=rtl] .googlemap .gm-style-iw.gm-style-iw-c button[title=Close] {
   height: 3rem;
   border-radius: 50%;
   color: var(--sparrow-gray-700);
-  background-color: rgba(var(--sparrow-white-rgb), 0.8) !important;
+  background-color: rgba(var(--sparrow-white-rgb), 0.8);
   -webkit-box-shadow: 0.125rem 0.125rem 0.25rem rgba(var(--sparrow-black-rgb), 0.1);
   box-shadow: 0.125rem 0.125rem 0.25rem rgba(var(--sparrow-black-rgb), 0.1);
   z-index: 1;
